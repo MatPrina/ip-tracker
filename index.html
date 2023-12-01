@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <title>Frontend Mentor | IP Address Tracker</title>
+  </head>
+  <body>
+    <header id="cabecario">
+      <h1 id="titulo">IP Address Tracker</h1>
+      <div id="pesquisa">
+        <input type="text" id="input-pesquisa" placeholder="Search for any IP address or domain">
+        <button id="btnPesquisa"><img src="./images/icon-arrow.svg" alt="ícone de seta"></button>
+      </div>
+      <section id="informacoes">
+        <div class="div-infos">
+          <h2 class="div-titulo">IP ADDRESS</h2>
+          <span id="ip" class="div-conteudo"></span>
+        </div>
+        <div class="div-infos">
+          <h2 class="div-titulo">LOCATION</h2>
+          <span id="location" class="div-conteudo"></span>
+        </div>
+        <div class="div-infos">
+          <h2 class="div-titulo">TIMEZONE</h2>
+          <span id="timezone" class="div-conteudo"></span>
+        </div>
+        <div class="div-infos">
+          <h2 class="div-titulo">ISP</h2>
+          <span id="isp" class="div-conteudo"></span>
+        </div>
+      </section>
+    </header>
+    <div id="mapa"></div>
+    <script src="./script.js"></script>
+  </body>
+</html>
